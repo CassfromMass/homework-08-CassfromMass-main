@@ -147,7 +147,5 @@ def main(args) -> None:
         print_stats(get_stats_block(input_file))
 
 
-
-
 if __name__ == "__main__":
     main(sys.argv)

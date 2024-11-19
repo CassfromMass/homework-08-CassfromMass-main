@@ -8,6 +8,7 @@ Student:  Cassie Honda
 This file contains functions to help with manipulating files and JSON.
 """
 
+
 def read_file(file_path: str) -> tuple:
     """
     Reads in a file and returns a tuple with each line as a string.
