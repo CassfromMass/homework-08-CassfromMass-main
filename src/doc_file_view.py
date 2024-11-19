@@ -7,13 +7,6 @@ Student:  Cassie Honda
 
 This file contains functions to help with manipulating files and JSON.
 """
-# the course videos described using built in open() and close() methods to open and closed files.
-# the sources I found online suggested that it is better to use a with statement so that the file automatically closes.
-# that would look like this instead:
-#   with open(file_path, "r") as content:
-#        lst = [line.strip() for line in content if line.strip()]
-#    return tuple(lst)
-
 
 def read_file(file_path: str) -> tuple:
     """
@@ -49,8 +42,7 @@ def write_json_file(doc_stats: tuple, file_path: str) -> None:
         file_path (str): The path of the file to be written.
     """
     ...
-    # replace with your code, ... is same as pass
-    # use stats to json to convert tuple to string
+
     try:
         with open(file_path, "w") as file:
             file.write(stats_to_json(doc_stats))

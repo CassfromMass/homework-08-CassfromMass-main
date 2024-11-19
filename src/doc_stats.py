@@ -100,19 +100,6 @@ def get_input_file(args: list) -> str:
             return args[f_index+1]
     else:
         return ""
-# above code is returning an empty string when it should return a file :(
-# WORKING DRAFTS BELOW:
-#     # pretend args = ["doc_stats.py","hello", "world", "-f", "-g"]
-#     i = 3 #figure out this number with code
-#     f = args[i]
-#     f_value = args[i + 1] # equals -g so raise ValueError
-
-#     # pretend args = ["doc_stats.py", "-f"]
-#     i = 1
-#     f = args[i]
-#     f_value = args[i + 1] #would cause an index error, so want to prevent this and raise ValueError instead
-
-#     return "" # replace with your code
 
 
 def get_output_file(args: list) -> str:
@@ -144,8 +131,8 @@ def get_output_file(args: list) -> str:
 def main(args) -> None:
     """
     Main function for the program.
+
     """
-    print(args)  # remove after testing
     if get_input_file(args) != "":
         input_file_path = get_input_file(args)
         input_file = read_file(input_file_path)
@@ -159,8 +146,7 @@ def main(args) -> None:
     else:
         print_stats(get_stats_block(input_file))
 
-    pass  # replace with your code
-    # args is a list of strings from terminal
+
 
 
 if __name__ == "__main__":
