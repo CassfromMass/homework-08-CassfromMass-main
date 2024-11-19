@@ -97,7 +97,7 @@ def get_input_file(args: list) -> str:
         if f_index + 1 >= len(args) or args[f_index + 1] in ["-f", "-h", "-g", "-", "--"]:
             raise ValueError("File name expected.")
         else:
-            return args[f_index+1]
+            return args[f_index + 1]
     else:
         return ""
 
@@ -123,7 +123,7 @@ def get_output_file(args: list) -> str:
         if o_index - 1 < len(args) and args[o_index + 1] in ["-f", "-h", "-g", "-", "--"]:
             return "out.txt"
         else:
-            return args[o_index+1]
+            return args[o_index + 1]
     else:
         return ""
 
